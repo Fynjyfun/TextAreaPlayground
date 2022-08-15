@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@devextreme/runtime": "3.0.7",
+    "devexpress-diagram": "2.1.63",
+    "devexpress-gantt": "4.1.32",
+    "devextreme": "22.1.4",
+    "devextreme-quill": "1.5.16",
+    "devextreme-vue": "22.1.4",
+    "dx-systemjs-vue-browser": "1.0.15",
+    "es6-object-assign": "1.1.0",
+    "inferno": "7.4.4",
+    "inferno-clone-vnode": "7.4.11",
+    "inferno-compat": "7.4.11",
+    "inferno-create-class": "7.4.11",
+    "inferno-create-element": "7.4.11",
+    "inferno-dom": "latest",
+    "inferno-extras": "7.4.11",
+    "inferno-hydrate": "7.4.11",
+    "jszip": "3.7.1",
+    "luxon": "1.28.0",
+    "mitt": "latest",
+    "rrule": "2.6.4",
+    "vue": "3.0.0"
+  },
+  "description": "The TextArea component enables users to enter and edit multi-line text. This component can have a fixed or resizable height. The component with the fixed height displays a native scroll bar if the entered text exceeds the text area. If you set the autoResizeEnabled property to true, the TextArea automatically resizes its height to fit the text.\nYou can also specify the maxLength property to limit the number of characters a user can enter. Note that this property only limits the number of characters for users. You can enter text that exceeds the maximum character length programmatically, but the number of characters displayed to users will still be limited by this property setting.\nThe TextArea stores the text in the value property and updates it after the DOM event occurs. To specify which DOM event to use instead of the default \"change\" event, use the valueChangeEvent property. To handle the value change, use the TextArea's onValueChanged function.\nChange the text in the Event Handling and API section below to see how this feature works. Use the \"Synchronize text areas\" drop-down menu to select which event updates the read-only component's value: \"change\" or \"keyup\".\n",
+  "name": "Overview - DevExtreme Text Area"
+}
