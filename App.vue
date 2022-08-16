@@ -5,6 +5,11 @@
     </div>
     <div class="full-width-content">
       <DxTextArea
+        :inputAttr="{
+          wrap: 'off',
+          rows: '1',
+          style: 'resize: none;',
+        }"
         :height="90"
         v-model:value="valueForEditableTextArea"
         :value-change-event="eventValue"
