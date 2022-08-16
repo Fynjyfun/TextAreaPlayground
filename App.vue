@@ -5,19 +5,18 @@
     </div>
     <div class="full-width-content">
       <DxTextArea
-        :inputAttr="{
-          wrap: 'off',
-          rows: '1',
-          style: 'resize: none;',
-        }"
         :height="90"
         v-model:value="valueForEditableTextArea"
         :value-change-event="eventValue"
       />
       <DxTextArea
-        :height="90"
+        :inputAttr="{
+          wrap: 'off',
+          rows: '1',
+          style: 'resize: none;',
+        }"
         :read-only="true"
-        :value="valueForEditableTextArea"
+        :value="valueText"
       />
     </div>
   </div>
@@ -38,6 +37,15 @@ export default {
       value: service.getContent(),
       valueForEditableTextArea: service.getContent(),
     };
+  },
+  computed: {
+    valueText() {
+      let _text = "asdasdfkajhgflafkjghsdlghlsdgfh";
+      for (let i = 0; i < 10; i++) {
+        _text += _text;
+      }
+      return _text;
+    },
   },
 };
 </script>
