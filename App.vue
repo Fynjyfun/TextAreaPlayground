@@ -13,7 +13,7 @@
         :inputAttr="{
           wrap: 'off',
           rows: '1',
-          style: 'resize: none;',
+          style: 'white-space: nowrap;',
         }"
         :read-only="true"
         :value="valueText"
